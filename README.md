@@ -1,4 +1,4 @@
-# Vertebral Column Data Set Analysis
+# KNN-Based Classification of Spinal Conditions in the Vertebral Column Data Set
 
 ## Overview
 This project is centered around the analysis and classification of the Vertebral Column Data Set, originally compiled by Dr. Henrique da Mota. The primary focus is on binary classification of spinal conditions into Normal (NO=0) and Abnormal (AB=1), utilizing biomechanical features from the pelvis and lumbar spine. The project encompasses data pre-processing, exploratory data analysis, and classification employing the K-Nearest Neighbors (KNN) algorithm.
