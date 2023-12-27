@@ -23,11 +23,22 @@ Download the Vertebral Column Data Set from the [UCI Machine Learning Repository
 ### Variants of KNN
 Explore alternative distance metrics like Minkowski, Manhattan, Chebyshev, and Mahalanobis, analyzing their effect on classification accuracy.
 
-### Weighted Decision Making
-Apply weighted voting with various distance metrics and report optimal test errors.
+### <strong> Analysis of Test Error Rate </strong>
+#### Majority Polling Decision:
+|     | Metrics                  | K*   | Test Error Rate  |
+|-----|--------------------------|------|------------------|
+| 0   | Manhattan                | 1    | 0.11             |
+| 1   | Minkowski(log10(p)=0.7)  | 1    | 0.11             |
+| 2   | Chebyshev                | 16   | 0.08             | 
+| 3   | Mahalanobis              | 6    | 0.08             | 
 
-### Analysis of Training Error Rate
-Identify the lowest training error rate attained in the project.
+#### Weighted Decision:
+|     | Metrics    | K*   | Test Error Rate  |
+|-----|------------|------|------------------|
+| 0   | Euclidea   | 6    | 0.10             |
+| 1   | Manhattan  | 26   | 0.10             |
+| 2   | Chebyshev  | 16   | 0.11             | 
+
 
 ## Requirements
 - Python 3.x
@@ -41,6 +52,3 @@ pip install numpy pandas matplotlib scikit-learn
 
 ## Usage
 Run the Jupyter notebook KNN-Based_Classification_Cici_Chang.ipynb to perform the analysis. The notebook contains detailed instructions and code for each step of the project.
-
-## Contributing
-Contributions to the project are welcome. Please ensure that any enhancements or bug fixes are accompanied by appropriate test cases.
